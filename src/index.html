@@ -10,11 +10,14 @@
 <body>
     <!-- Top Nav Start -->
     <div class="bg-primary1 w-full p-2 ">
-        <div class="container mx-auto hidden md:flex justify-around">
-
-            <p class="text-white flex"> <img src="./assets/images/call.svg" alt="call" class="mr-2"> 0852 8765 234</p>
+        <!-- ketika size md keatas akan justify-arround,ketika lainnya maka akan ke center -->
+        <!-- Buat mobile fitst, atau utamakan tampilan mobile terlebih dahulu, kondisi lain menyesuaikan -->
+        <div class="container mx-auto flex justify-center md:justify-around">
+            <p class="text-white hidden md:flex"> <img src="./assets/images/call.svg" alt="call" class="mr-2"> 0852 8765
+                234</p>
             <p class="text-white">Dapatkan Promo Beli 1 Gratis 1</p>
-            <p class="text-white flex"> <img src="./assets/images/location.svg" alt="location" class="mr-2"> Yogyakarta,
+            <p class="text-white hidden md:flex"> <img src="./assets/images/location.svg" alt="location" class="mr-2">
+                Yogyakarta,
                 Indonesia</p>
         </div>
     </div>
