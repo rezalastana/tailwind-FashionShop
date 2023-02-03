@@ -596,8 +596,36 @@ video {
   margin-left: 0.25rem;
 }
 
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
+.mr-5 {
+  margin-right: 1.25rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
+.mr-10 {
+  margin-right: 2.5rem;
+}
+
+.ml-24 {
+  margin-left: 6rem;
+}
+
+.mr-24 {
+  margin-right: 6rem;
+}
+
 .mr-2 {
   margin-right: 0.5rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
 }
 
 .block {
@@ -640,6 +668,10 @@ video {
   width: 11rem;
 }
 
+.w-24 {
+  width: 6rem;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -652,8 +684,16 @@ video {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .divide-y > :not([hidden]) ~ :not([hidden]) {
@@ -683,12 +723,12 @@ video {
   border-radius: 0.25rem;
 }
 
-.border {
-  border-width: 1px;
-}
-
 .border-2 {
   border-width: 2px;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .border-b {
@@ -700,14 +740,19 @@ video {
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
+.border-primary1 {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 62 41 / var(--tw-border-opacity));
+}
+
 .border-gray-100 {
   --tw-border-opacity: 1;
   border-color: rgb(243 244 246 / var(--tw-border-opacity));
 }
 
-.border-primary1 {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 62 41 / var(--tw-border-opacity));
+.bg-primary1 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 62 41 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -723,11 +768,6 @@ video {
 .bg-gray-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
-}
-
-.bg-primary1 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 62 41 / var(--tw-bg-opacity));
 }
 
 .p-2 {
@@ -763,11 +803,6 @@ video {
   padding-right: 1rem;
 }
 
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
 .pl-3 {
   padding-left: 0.75rem;
 }
@@ -798,12 +833,17 @@ video {
   font-weight: 500;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .font-normal {
   font-weight: 400;
 }
 
-.font-bold {
-  font-weight: 700;
+.text-primary1 {
+  --tw-text-opacity: 1;
+  color: rgb(0 62 41 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -819,11 +859,6 @@ video {
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
-}
-
-.text-primary1 {
-  --tw-text-opacity: 1;
-  color: rgb(0 62 41 / var(--tw-text-opacity));
 }
 
 .shadow {
@@ -1103,12 +1138,32 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:fixed {
+    position: fixed;
+  }
+
+  .md\:top-0 {
+    top: 0px;
+  }
+
+  .md\:left-0 {
+    left: 0px;
+  }
+
+  .md\:z-20 {
+    z-index: 20;
+  }
+
   .md\:order-2 {
     order: 2;
   }
 
   .md\:order-1 {
     order: 1;
+  }
+
+  .md\:mr-2 {
+    margin-right: 0.5rem;
   }
 
   .md\:mr-0 {
@@ -1119,8 +1174,16 @@ video {
     margin-top: 0px;
   }
 
-  .md\:mr-2 {
-    margin-right: 0.5rem;
+  .md\:ml-24 {
+    margin-left: 6rem;
+  }
+
+  .md\:mr-24 {
+    margin-right: 6rem;
+  }
+
+  .md\:mr-1 {
+    margin-right: 0.25rem;
   }
 
   .md\:flex {
@@ -1133,6 +1196,10 @@ video {
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:w-full {
+    width: 100%;
   }
 
   .md\:flex-row {
@@ -1158,8 +1225,17 @@ video {
     background-color: transparent;
   }
 
+  .md\:bg-primary1 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 62 41 / var(--tw-bg-opacity));
+  }
+
   .md\:p-0 {
     padding: 0px;
+  }
+
+  .md\:p-2 {
+    padding: 0.5rem;
   }
 
   .md\:text-sm {
@@ -1180,19 +1256,14 @@ video {
     background-color: transparent;
   }
 
-  .md\:hover\:text-green-800:hover {
-    --tw-text-opacity: 1;
-    color: rgb(22 101 52 / var(--tw-text-opacity));
-  }
-
-  .md\:hover\:text-blue-700:hover {
-    --tw-text-opacity: 1;
-    color: rgb(29 78 216 / var(--tw-text-opacity));
-  }
-
   .md\:hover\:text-primary1:hover {
     --tw-text-opacity: 1;
     color: rgb(0 62 41 / var(--tw-text-opacity));
+  }
+
+  .md\:hover\:text-green-800:hover {
+    --tw-text-opacity: 1;
+    color: rgb(22 101 52 / var(--tw-text-opacity));
   }
 
   @media (prefers-color-scheme: dark) {
