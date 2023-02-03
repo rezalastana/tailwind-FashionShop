@@ -1247,6 +1247,10 @@ video {
     display: flex;
   }
 
+  .md\:grid {
+    display: grid;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -1269,6 +1273,14 @@ video {
 
   .md\:justify-around {
     justify-content: space-around;
+  }
+
+  .md\:justify-items-start {
+    justify-items: start;
+  }
+
+  .md\:justify-items-center {
+    justify-items: center;
   }
 
   .md\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
